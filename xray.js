@@ -10,7 +10,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     chrome.tabs.query({}, function(tabs) {
       for (var i = 0; i < tabs.length; i++) {
         chrome.tabs.executeScript(tabs[i].id, {
-          code : "document.documentElement.style.webkitFilter='sepia(100%) invert(100%)';",
+          code : "document.documentElement.style.webkitFilter='sepia(100%) invert(100%)';document.documentElement.style.webkitTransition='-webkit-filter 1s ease-in-out';",
         });
       }
     });
@@ -34,7 +34,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 chrome.tabs.onUpdated.addListener(function() {
   if (running === true) {
     chrome.tabs.executeScript(null, {
-      code : "document.documentElement.style.webkitFilter='sepia(100%)  invert(100%)';",
+      code : "document.documentElement.style.webkitFilter='sepia(100%) invert(100%)';document.documentElement.style.webkitTransition='-webkit-filter 1s ease-in-out';",
      });
   }
 

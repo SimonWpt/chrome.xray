@@ -1,7 +1,7 @@
 # chrome.xray #
 This extension turns your chrome browser view to x-ray
 
-Version: 0.1
+Version: 0.2
 
 # Browser support #
 Chrome only

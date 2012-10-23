@@ -13,5 +13,5 @@
    "manifest_version": 2,
    "name": "xray",
    "permissions": [ "tabs", "\u003Call_urls\u003E" ],
-   "version": "0.1"
+   "version": "0.2"
 }
