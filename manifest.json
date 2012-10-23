@@ -1,0 +1,17 @@
+{
+   "background": {
+      "scripts": [ "xray.js" ]
+   },
+   "browser_action": {
+      "default_icon": "xray.png",
+      "default_title": "xray"
+   },
+   "description": "turn your browser in xray",
+   "icons": {
+      "32": "xray.png"
+   },
+   "manifest_version": 2,
+   "name": "xray",
+   "permissions": [ "tabs", "\u003Call_urls\u003E" ],
+   "version": "0.1"
+}
